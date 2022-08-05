@@ -1,4 +1,4 @@
-package com.interview.service;
+package com.interview.standalone;
 
 import org.junit.jupiter.api.Test;
 

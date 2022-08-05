@@ -1,4 +1,4 @@
-package com.interview.service;
+package com.interview.standalone;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -25,6 +25,7 @@ public class DateService {
 
 
     // map will contain 1 or more entries and less than 32 entries
+    // entry keys will be pre-sorted (ascending) smallest to largest
     // sample map: (key can be 1...31, value can be 0....10000)
     //    {1=190} day 1 had 190 transactions
     //    {2=128} day 2 had 128 transactions
