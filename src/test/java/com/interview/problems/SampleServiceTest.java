@@ -9,11 +9,21 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SampleServiceTest {
 
     private final SampleService testClass = new SampleService();
+
+
+    @Test
+    public void reverseString() {
+        char[] input = {'!','d','e','s','s','a','p',' ','t','i'};
+
+        char[] result = testClass.reverseString(input);
+
+        assertArrayEquals("it passed!".toCharArray(), result);
+    }
 
     @Test
     public void getEarliestDateFromList() {
